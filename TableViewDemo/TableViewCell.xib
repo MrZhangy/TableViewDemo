@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-bs-C3v">
+                        <rect key="frame" x="8" y="8" width="304" height="36"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="7lP-0c-yrK"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="ska-lo-hkS"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="wK0-bs-C3v" secondAttribute="bottom" constant="-8" id="4kp-MF-jFM"/>
+                    <constraint firstItem="wK0-bs-C3v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vob-2O-r8Z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wK0-bs-C3v" secondAttribute="trailing" id="WiG-SD-foJ"/>
+                    <constraint firstItem="wK0-bs-C3v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="reC-Kw-FFE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tableView" destination="wK0-bs-C3v" id="g39-tD-CzT"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="377.5"/>
+        </tableViewCell>
+    </objects>
+</document>
